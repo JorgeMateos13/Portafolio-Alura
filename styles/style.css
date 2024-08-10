@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primerio: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--color-primerio);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--color-terciario);
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo {
+    font-size: 2rem;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion_contenido_texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion_enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_enlaces_subtitulo {
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400
+}
+
+.presentacion_enlaces_link {
+    width: 50%;
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentacion_enlaces_link:hover {
+    background-color: var(--color-hover);
+}
+
+.presentacion_imagen {
+    width: 50%;
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primerio);
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .header {
+        padding: 10%;
+    }
+    
+    .header_menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+
+        width: auto;
+    }
+}
